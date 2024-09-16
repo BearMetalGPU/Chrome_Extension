@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearMetal 🧸🤘 Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BearMetal 🧸🤘 Calculator</h1>
+        </header>
+        <main>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="gpu">By GPU</button>
+                <button class="tab-btn" data-tab="model">By Model</button>
+            </div>
+            <div class="tab-content active" id="gpu-tab">
+                <label for="gpu-power">Number of GPUs:</label>
+                <input type="range" id="gpu-power" min="1" max="32" value="1">
+                <div id="gpu-power-value" class="slider-value">1 GPU</div>
+            </div>
+            <div class="tab-content" id="model-tab">
+                <label for="model-complexity">Model Parameter Size (billions):</label>
+                <input type="range" id="model-complexity" min="1" max="1000" value="1">
+                <div id="model-complexity-value" class="slider-value">1B parameters</div>
+            </div>
+            <div id="recommendation" class="hidden">
+                <h3>Looks like you need something epic!</h3>
+                <p>Your requirements seem advanced. For the best guidance, it's recommended to discuss your needs with our experts.</p>
+            </div>
+        </main>
+        <footer>
+            <button id="contact-btn">Contact Our Experts</button>
+            <div id="contact-info" class="hidden">
+                <p>Email: gpu@bearmetal.co</p>
+            </div>
+            <div class="website-container">
+                <a href="https://bearmetal.co" target="_blank" class="website-link">bearmetal.co</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

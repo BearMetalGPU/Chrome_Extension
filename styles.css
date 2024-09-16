@@ -1,0 +1,211 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #111111;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #222222;
+    border-radius: 9999px;
+    padding: 2px;
+}
+
+.tab-btn {
+    flex: 1;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.tab-btn.active {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+#calculate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+#calculate-btn:hover {
+    background-color: #FFC000;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #222222;
+    border-radius: 6px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#contact-btn {
+    margin-top: 20px;
+    background-color: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+#contact-btn:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+#contact-info {
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #444444;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.slider-value {
+    text-align: right;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+#recommendation {
+    background-color: #FFD700;
+    color: #000000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#recommendation h3 {
+    margin-top: 0;
+}
+
+.website-container {
+    margin-top: 20px; /* Increased padding before the link */
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #333; /* Adding a subtle separator */
+}
+
+.website-link {
+    color: #FFD700;
+    text-decoration: underline; /* Underline by default */
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.website-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #FFC000; /* Slightly change color on hover for better feedback */
+}
+
+.website {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.website a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.website a:hover {
+    text-decoration: underline;
+}
